@@ -6,7 +6,7 @@
 * [Português (#-português)](#-português)
 * [English (#-english)](#-english)
 
----
+--- 
 
 ## 🇵🇹 Português
 
