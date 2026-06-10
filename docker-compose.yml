@@ -1,0 +1,25 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "1143:11434"
+
+  app:
+    build: .
+    container_name: streamlit_ai_rag
+    ports:
+      - "8502:8502"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    volumes:
+      - .:/app
+      - ./db:/app/db # Persistência da tua pasta ./db
+      - ./docs:/app/docs   # Mapeia a tua pasta docs local
+    depends_on:
+      - ollama
+
+volumes:
+  ollama_data:

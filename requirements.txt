@@ -1,0 +1,18 @@
+# Framework Web
+streamlit
+
+# Orquestração e Processamento de Documentos
+langchain
+langchain-community
+langchain-text-splitters
+langchain-ollama
+pypdf
+
+# Base de Dados Vetorial
+chromadb
+
+# Integração com Modelos (Ollama)
+ollama
+
+# Utilitários
+python-dotenv
