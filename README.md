@@ -1,5 +1,3 @@
-# rag
-
 # AI RAG: Document Intelligence with LangChain, ChromaDB & Ollama
 
 ---
